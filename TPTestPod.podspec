@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "TPTestPod"
-  s.version          = "0.1.5"
+  s.version          = "0.1.6"
   s.summary          = "TPTestPod is a simple testing pod to test pod_tools"
   s.homepage         = "http://tidepool.co"
   s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
