@@ -54,6 +54,7 @@
   // Dispose of any resources that can be recreated.
 }
 
+// This is the main method
 -(void)configureStage:(TPStageViewController *)stage forLevel:(int)level
 {
   TPCodebreakerStageViewController *codebreakerStageVC = (TPCodebreakerStageViewController *)stage;
@@ -66,17 +67,18 @@
   
 }
 
-//-(TPGameResult *)finalGameResult
-//{
-//  TPGameResult *result = [TPGameResult gameResultWithGameName:@"" withBlock:^(TPGameResult *gameResult) {
-//  }];
-//  NSString *game = @"codebreaker";
-//  result.backgroundImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@/%@bg-blur.jpg", game, game]];
-////  result.gameNameLabel.text = [game uppercaseString];
-//  result.totalScoreLabel.text = [NSString stringWithFormat:@"%i", self.score + self.bonusScore];
-//  result.bonusScoreLabel.text = [NSString stringWithFormat:@"%i", self.bonusScore];
-//  result.levelLabel.text = [NSString stringWithFormat:@"%i", self.level];
-//  result.levelScoreLabel.text = [NSString stringWithFormat:@"%i", self.score];
-//}
+-(NSArray *)howToPlayInstructions
+{
+  return @[
+           @{
+             @"image":@"codebreaker/howtoplay-codebreaker1.png",
+             @"text":@"Pay attention as yellow circles will flip,\n appear, then quickly disappear.\n Remember the pattern they create.",
+             },
+           @{
+             @"image":@"codebreaker/howtoplay-codebreaker2.png",
+             @"text":@"You can select the circles by tapping\n them individually or swiping.",
+             },
+           ];
+}
 
 @end

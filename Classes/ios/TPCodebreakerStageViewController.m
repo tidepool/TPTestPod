@@ -105,10 +105,12 @@
     circle.userInteractionEnabled = NO;
     [_chosenIndices removeObject:[NSNumber numberWithInt:index]];
     if (![_chosenIndices count]) {
+      self.stageOver = YES;
       [self showGraphicForResultCorrect:YES];
       [self buildOutAndProceed:YES];
     }
   } else {
+    self.stageOver = YES;    
     [self showGraphicForResultCorrect:NO];
     [self buildOutAndProceed:NO];
   }
