@@ -1,0 +1,186 @@
+[
+ {
+ "title": "Break In",
+ "background_image": "image1",
+ "long_description": "Even a longer mission description goes here.",
+ "unique_name": "1",
+ "short_description": "Find evidence for a client",
+ "stages": [
+            {
+            "game": {
+            "duration": 30,
+            "game_id": "Codebreaker",
+            "levels_to_beat": 2,
+            "start_level": 5
+            },
+            "header_story": {
+            "screens": [
+                        {
+                        "background_image": "corpbuilding-bg.jpg",
+                        "story_line": "Use your code breaking skills to break into JENSA Corporation's building",
+                        "title": "Breaking In..."
+                        }
+                        ]
+            },
+            "title": "Codebreaker"
+            },
+            {
+            "game": {
+            "duration": 30,
+            "game_id": "Lockpicker",
+            "levels_to_beat": 2,
+            "start_level": 1
+            },
+            "header_story": {
+            "screens": [
+                        {
+                        "background_image": "office-outside-bg.jpg",
+                        "story_line": "Unlock the safe to get the evidence needed to prove your client’s innocence",
+                        "title": "Find evidence"
+                        }
+                        ]
+            },
+            "title": "Lockpicker"
+            }
+            ],
+ "requirements" : [
+                   { "game_unique_name": "Codebreaker", "play_count": 5 },
+                   { "game_unique_name": "Lockpicker", "play_count": 5 }
+                   ]
+ },
+ {
+ "title": "Escape",
+ "background_image": "image1",
+ "long_description": "The evidence that you found to prove your client's innocence turns out to have been faked. You are now required to get the evidence from a different building now.",
+ "unique_name": "2",
+ "short_description": "Escape the bad guys!",
+ "stages": [
+            {
+            "game": {
+            "duration": 10,
+            "game_id": "Codebreaker",
+            "levels_to_beat": 2,
+            "start_level": 8
+            },
+            "header_story": {
+            "screens": [
+                        {
+                        "background_image": "corpbuilding-bg.jpg",
+                        "story_line": "This time you need to break into one of the officer's homes. Somehow, they have better security at home than at the office building!",
+                        "title": "Breaking In..."
+                        }
+                        ]
+            },
+            "title": "Codebreaker"
+            },
+            {
+            "game": {
+            "duration": 15,
+            "game_id": "Shootout",
+            "levels_to_beat": 2,
+            "start_level": 5
+            },
+            "header_story": {
+            "screens": [
+                        {
+                        "background_image": "office-outside-bg.jpg",
+                        "story_line": "The security guard sees you at the office and now you have to deal with some goons!",
+                        "title": "Found out!"
+                        }
+                        ]
+            },
+            "title": "Shootout"
+            }
+            ],
+ "requirements" : [
+                   { "game_unique_name": "Codebreaker", "play_count": 5 },
+                   { "game_unique_name": "Shootout", "play_count": 5 }
+                   ]
+ },
+ {
+ "title": "Suitcase",
+ "background_image": "image1",
+ "long_description": "You are being hunted down by assassins searching for the locked briefcase that has mysteriously appeared with your name engraved. The only instructions are to deliver the suitcase to a secret facility in the Alps. No questions asked.",
+ "unique_name": "3",
+ "short_description": "Escape the bad guys!",
+ "stages": [
+            {
+            "game": {
+            "duration": 20,
+            "game_id": "Shootout",
+            "levels_to_beat": 1,
+            "start_level": 1
+            },
+            "header_story": {
+            "screens": [
+                        {
+                        "background_image": "train-bg.jpg",
+                        "story_line": "You take the train to begin your journey, only to discover you’ve been followed by a handful of assassins. Avoid the innocent bystanders and protect the suitcase from being taken.",
+                        "title": "Train ride"
+                        }
+                        ]
+            },
+            "title": "Trainride"
+            },
+            {
+            "game": {
+            "duration": 30,
+            "game_id": "Lockpicker",
+            "levels_to_beat": 2,
+            "start_level": 2
+            },
+            "header_story": {
+            "screens": [
+                        {
+                        "background_image": "suitcase-bg.jpg",
+                        "story_line": "You’re starting to wonder what is in this locked suitcase that the assassins want so badly. Unlock the complicated lock system on this suitcase, but remember, what has been seen can't be unseen.",
+                        "title": "Found out!"
+                        }
+                        ]
+            },
+            "title": "Suitcase"
+            },
+            {
+            "game": {
+            "duration": 45,
+            "game_id": "Codebreaker",
+            "levels_to_beat": 1,
+            "start_level": 8
+            },
+            "header_story": {
+            "screens": [
+                        {
+                        "background_image": "mountain-bg.jpg",
+                        "story_line": "Your point of contact has disappeared and you know the assassins are still on your trail. You need to quickly deliver the suitcase and break in to the secret facility.",
+                        "title": "Alps"
+                        }
+                        ]
+            },
+            "title": "Alps"
+            },
+            {
+            "game": {
+            "duration": 20,
+            "game_id": "Shootout",
+            "levels_to_beat": 3,
+            "start_level": 10
+            },
+            "header_story": {
+            "screens": [
+                        {
+                        "background_image": "assassins-bg.jpg",
+                        "story_line": "The assassins have appeared! You need to escape! It was all a set up!",
+                        "title": "Escape"
+                        }
+                        ]
+            },
+            "title": "Escape"
+            }
+            ], 
+ "requirements" : [
+                   { "game_unique_name": "Shootout", "play_count": 5 },
+                   { "game_unique_name": "Codebreaker", "play_count": 5 },
+                   { "game_unique_name": "Lockpicker", "play_count": 5 }
+                   ]
+ }
+]

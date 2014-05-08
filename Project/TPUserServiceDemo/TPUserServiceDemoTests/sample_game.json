@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Codebreaker",
+    "max_possible_score": 1000,
+    "cognitive_percentages": {
+      "speed": 0.3,
+      "attention": 0.3,
+      "memory": 0.4,
+      "problem_solving": 0,
+      "flexibility": 0
+    }
+  },
+  {
+    "name": "Lockpicker",
+    "max_possible_score": 1000,
+    "cognitive_percentages": {
+      "speed": 0.3,
+      "attention": 0.5,
+      "memory": 0,
+      "problem_solving": 0.2,
+      "flexibility": 0.2
+    }
+  },
+  {
+    "name": "Shootout",
+    "max_possible_score": 1000,
+    "cognitive_percentages": {
+      "speed": 0.1,
+      "attention": 0.3,
+      "memory": 0,
+      "problem_solving": 0.4,
+      "flexibility": 0.2
+      }
+  }
+]

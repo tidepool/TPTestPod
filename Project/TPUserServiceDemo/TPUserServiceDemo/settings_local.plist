@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>userServiceBaseURL</key>
+    <string>http://user-service.dev/</string>
+    <key>gameServiceBaseURL</key>
+    <string>http://game-service.dev/</string>
+    <key>keychainServiceName</key>
+    <string>Tidepool</string>
+    <key>imageBaseURL</key>
+    <string></string>
+  </dict>
+</plist>
