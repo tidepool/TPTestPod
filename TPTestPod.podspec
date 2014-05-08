@@ -13,9 +13,16 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '7.0'
   s.requires_arc = true
 
-  s.source_files = 'Classes/ios/**/*'
-  s.resources = 'Assets/**/*'
+  s.source_files = 'Classes'
+  s.resources = 'Assets/*'
 
-  s.dependency 'TPGameAbstract'
-  s.dependency 'TPServices'  
+  s.ios.exclude_files = 'Classes/osx'
+  s.osx.exclude_files = 'Classes/ios'
+  s.public_header_files = 'Classes/**/*.h'
+  s.frameworks = 'Foundation', 'SystemConfiguration', 'AdSupport'
+  s.dependency 'AFNetworking', '~> 2.0'
+  s.dependency 'SSKeychain', '~> 1.2'
+  s.dependency 'Facebook-iOS-SDK', '3.13.1'
+  s.dependency 'ReactiveCocoa', '~> 2.2'
+  s.dependency 'Mantle', '~> 1.3'
 end
