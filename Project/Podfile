@@ -1,0 +1,7 @@
+pod "TPCodebreaker", :path => "../TPCodebreaker.podspec"
+
+target "Demo" do
+end
+
+target "DemoTests" do
+end
